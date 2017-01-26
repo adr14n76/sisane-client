@@ -30,7 +30,7 @@ function bfkey(serverService, $uibModal, metaService)
             self.bean["id_" + self.reference] = modalResult;
             var jsonToSend = {json: JSON.stringify(serverService.array_identificarArray(self.bean))};
             serverService.promise_setOne(self.name, jsonToSend);
-        
+        location.reload();
         });
     };
 
